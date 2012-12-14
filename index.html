@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <!--<link rel="stylesheet" type="text/css" href="css/jquery.mobile.custom.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile.custom.structure.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile.custom.theme.min.css" />-->
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.2.0.min.css" />
+        <title>MPoint</title>
+    </head>
+    <body>
+    	<div data-role="page" id="one">
+			<div data-role="header">
+				<h1 class="header">MPoint</h1>
+			</div>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#one" class="ui-btn-active ui-state-persist">Meet</a></li>
+					<li><a href="#two">Chat</a></li>
+					<li><a href="#three">Me</a></li>
+				</ul>
+			</div>
+	        <div data-role="content">
+	            <div id="map">
+	            </div>
+	            <div id="list">
+	            </div>
+	        </div>
+        </div>
+        
+    	<div data-role="page" id="two">
+			<div data-role="header">
+				<h1 class="header">MPoint</h1>
+			</div>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#one">Meet</a></li>
+					<li><a href="#two" class="ui-btn-active ui-state-persist">Chat</a></li>
+					<li><a href="#three">Me</a></li>
+				</ul>
+			</div>
+	        <div data-role="content">
+		        <input id="txt"/>
+	            <div id="msgs">
+	            </div>
+	        </div>
+        </div>
+        
+    	<div data-role="page" id="three">
+			<div data-role="header">
+				<h1 class="header">MPoint</h1>
+			</div>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#one">Meet</a></li>
+					<li><a href="#two">Chat</a></li>
+					<li><a href="#three" class="ui-btn-active ui-state-persist">Me</a></li>
+				</ul>
+			</div>
+	        <div data-role="content">
+	            <div id="contacts">
+	            </div>
+	        </div>
+        </div>
+        <script type="text/javascript" src="cordova-2.2.0.js"></script>
+        <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile-1.2.0.min.js"></script>
+        <!--
+        -->
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/socket.io.min.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </body>
+</html>
